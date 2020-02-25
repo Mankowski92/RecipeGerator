@@ -1,0 +1,12 @@
+.fridge {
+  margin: auto;
+  border: 5px solid blue;
+  width: 30vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  .fridge-shelf{
+    width: 100px;
+    height: 100px;
+  }
+}
