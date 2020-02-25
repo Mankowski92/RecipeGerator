@@ -5,6 +5,8 @@
 * {
 	box-sizing: border-box;
 }
+
+
 :root{
 	--rotation-angle: 180deg;
 }
@@ -15,6 +17,7 @@
   flex-direction: row;
   height: 100vh;
   justify-content: space-around;
+  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(130,151,159,1) 7%, rgba(53,204,234,1) 100%);
 }
 
 .RandomRecipe-container{
@@ -28,6 +31,8 @@
 
 .addIngredient-container{
 	width: 30vw;
+	display: flex;
+	justify-content: center;
 }
 
 body {

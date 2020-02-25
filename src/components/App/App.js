@@ -1,14 +1,16 @@
 import React,{useState} from 'react';
 import '../../scss/App.scss';
 import AddToFridge from "../../components/AddToFridge";
-// import ViewRecipes from '../../components/ViewRecipes';
+import ViewRecipes from '../../components/ViewRecipes';
 import ViewJoke from '../ViewJoke';
 import RandomRecipe from "../RandomRecipe";
+import SearchRecipe from "../SearchRecipe"
 
 function App() {
 
   const [isOpen,toggleOpen] = useState(false);
   const [showRandomRecipe, setShowRandomRecipe] = useState(false)
+  const [ShowSearchedRecipe, setShowSearchedRecipe] = useState(false)
 
   const handleFridgeClick = ()=>{
       toggleOpen(!isOpen)
@@ -25,6 +27,10 @@ function App() {
     setShowRandomRecipe(true)
   }
 
+  const handleShowSearchedRecipe = () => {
+    setShowSearchedRecipe(true)
+  }
+
   return (
     <>
       
@@ -34,6 +40,7 @@ function App() {
       <div className= "main-container">
         <div className= "RandomRecipe-container">
           {showRandomRecipe && <RandomRecipe/>}
+          {ShowSearchedRecipe &&<SearchRecipe/>}
         </div>
 
         <div className= "fridge-container">
@@ -42,7 +49,9 @@ function App() {
 		  	    <div className="shelf one">
               <button onClick= {handleShowRandomRecipe} >Very important button</button>
             </div>
-			      <div className="shelf two"></div>
+			      <div className="shelf two">
+            <button onClick= {handleShowSearchedRecipe} >Very test button</button>
+            </div>
 		    	  <div className="shelf three"></div>
 			  <div className= {isOpen ? "door door-open" : "door"} onClick={handleFridgeClick}> </div>
 		      </div>
