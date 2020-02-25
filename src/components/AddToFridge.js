@@ -3,21 +3,28 @@ import "../scss/AddToFridge.scss";
 
 
 const AddToFridge = ()=>{
+  const [value,setValue]  = useState('');
+  const [ingredients, setIngredient] = useState([]);
 
-  const [stan, setStan] = useState([]);
-
-  const handleAddtoStan = () =>{
-    setStan(prevState => [...prevState])
+  const handleAddClick = (e) =>{
+    e.preventDefault()
+    setIngredient(prevState => [...prevState, value])
   }
 
+
   return (
-    <form>
-        <input type = "text" placeholder ="Add ingredient to fridge" />
-        <input type ="submit" onSubmit={handleAddtoStan} value="Add"/>
-        {stan.map(() => (
-    <li>{stan}</li>
-))}</form>
+    <form onSubmit={handleAddClick}>
+        <input className="ingredient" type = "text" placeholder ="Add ingredient to fridge" onChange={(e)=>setValue(e.target.value)} value={value} />
+        <input className="asdf" type ="submit"  value="Add"/>
+
+        <ul>
+          {ingredients.map(ingredient => <li>{ingredient}</li>)}
+        </ul>
+    </form>
   )
 }
 
 export default AddToFridge
+
+
+

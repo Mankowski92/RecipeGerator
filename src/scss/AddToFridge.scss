@@ -1,6 +1,11 @@
 input {
-    position: relative;
-    z-index: 2;
     border: 2px solid black;
-    z-index: 100;
+    padding: 10px;
 }
+
+//     -moz-transform: scale(-1, 1);        // Code to mirror reflect inputs. Probably will be needed in not distant future
+//     -webkit-transform: scale(-1, 1);
+//     -o-transform: scale(-1, 1);
+//     -ms-transform: scale(-1, 1);
+//     transform: scale(-1, 1);
+// 
