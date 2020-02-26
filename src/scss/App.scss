@@ -49,8 +49,9 @@ img {
 	padding-bottom: 10px;
 }
 
-button {
-	margin: 15px 0px 40px 0px;
+.button-fridge {
+	border-radius: 15px;
+	margin: 20px auto;
 }
 
 .fridge{
@@ -70,6 +71,10 @@ button {
 		border: 17px solid #d4d4d4;
 		border-radius: 15px;
 		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 	}
 	.shelf{
 		position: absolute;
