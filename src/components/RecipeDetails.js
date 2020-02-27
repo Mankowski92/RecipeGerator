@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from "react";
+import "../scss/RecipeDetails.scss"
 
-const RandomRecipe = () => {
+const RecipeDetails = ({recipeInfo}) => {
     const [data, setData] = useState(false);
 
     useEffect(() => {
-        fetch("https://api.spoonacular.com/recipes/random?apiKey=72537751dcd74f0cbe54623e5064fa3b", 
+        fetch(`https://api.spoonacular.com/recipes/${recipeInfo}/information?apiKey=72537751dcd74f0cbe54623e5064fa3b`, 
         {
         method: "GET",
         headers: {  
@@ -24,21 +25,26 @@ const RandomRecipe = () => {
         .catch(err => {
             console.error("Unfortunately, there was a hungry mistake: " + err.message)
         })
-    },[])
+    },[recipeInfo])
 
     if (data ===false ) {
         return <h1>Brace yourself recipe is coming...</h1>
     }
     return (
-        <div>
-            <h3>{data.recipes[0].title}</h3>
-          <img src={data.recipes[0].image} alt="Tekst alternatywny"></img>
-          <div>
-              <h4>Preparation instruction</h4>
-              <span dangerouslySetInnerHTML={{__html: data.recipes[0].instructions}} />
-          </div>
+        <div className= "detail-container">
+            <div className= "title-img-container">
+            <p>
+                Dish health Score:{data.healthScore}
+            </p>    
+            <img className= "recipeDetail-image" src={data.image} alt="Tekst alternatywny"></img>
+            </div>
+            <div className= "summary-container">
+                <span dangerouslySetInnerHTML={{__html: data.summary}} />
+            </div>
+            <div className= "summary-container">
+            </div>
         </div>
       );
     }
 
-export default RandomRecipe
+export default RecipeDetails
