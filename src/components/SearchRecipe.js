@@ -110,7 +110,7 @@ const SearchRecipe = (props) => {
   <Form.Row>
     <Form.Group as={Col} controlId="formGridText">
       <Form.Label>How many recipes for you?</Form.Label>
-      <Form.Control value={number} onChange={e => setNumber(e.target.value)} type="text" placeholder="e.g 3- (up to 100)" />
+      <Form.Control value={number} onChange={e => setNumber(e.target.value)} type="number" placeholder="e.g 3- (up to 100)" />
     </Form.Group>
     <Form.Group as={Col} controlId="formGridState">
       <Form.Label>Intolerances</Form.Label>

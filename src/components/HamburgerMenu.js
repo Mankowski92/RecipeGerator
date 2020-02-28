@@ -9,7 +9,6 @@ import {
   MDBCollapse,
   MDBContainer
 } from 'mdbreact';
-// import { BrowserRouter as Router } from 'react-router-dom';
 import "../scss/HamburgerMenu.scss"
 
 class HamburgerMenuPage extends Component {

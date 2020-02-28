@@ -3,10 +3,7 @@ import "../scss/About.scss"
 import HamburgerMenuPage from "./HamburgerMenu";
 
 
-
 const About = () => {
-
-
 
 return (
     <>
