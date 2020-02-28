@@ -6,10 +6,10 @@ const AddToFridge = ()=>{
   const [value,setValue]  = useState('');
   const [ingredients, setIngredient] = useState([]);
 
-
-  // ingredients.forEach(function(element) {
-  //   element.push()
-  // }
+  const array = []
+  ingredients.forEach(function(element) { ///// W tym miejscu przenoszę wpisane rzeczy z li do nowej tablicy
+  array.push(element)
+   
 
   const handleAddClick = (e) =>{
     e.preventDefault()
