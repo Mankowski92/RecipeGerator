@@ -11,8 +11,9 @@ return (
     <>
         <div className="main-contact-container">
         <HamburgerMenuPage/>
-        <div className="background">
-            
+        <div className="content">
+            <h1>How dare you try to contact me!</h1>
+            <div className="greta"></div>
         </div>
    </div>
     </>

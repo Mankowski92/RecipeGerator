@@ -4,6 +4,7 @@
     height: 100vh;
     align-items: center;
     justify-content: center;
+    background-color: rgba(212, 217, 219, 0.5);
         .container{
             background-color: #ccc;
             opacity: 0.87;
@@ -39,5 +40,12 @@
                 color: #303030 !important;
             }
         }
+    }
+}
+
+.content{
+    h1{
+        font-family: 'Lacquer', ;
+        font-size: 70px;
     }
 }

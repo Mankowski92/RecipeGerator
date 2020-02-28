@@ -4,6 +4,7 @@
     height: 100vh;
     align-items: center;
     justify-content: center;
+    background-color: rgba(212, 217, 219, 0.5);
         .container{
             background-color: #ccc;
             opacity: 0.87;
@@ -39,5 +40,29 @@
                 color: #303030 !important;
             }
         }
+    }
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        margin-top: 70px;
+        font-family: 'Lacquer', ;
+        font-size: 70px;
+    }
+    .greta{
+        background-image: url(../images/howDareYou.jpg);
+        width: 500px;
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50px;
+        opacity: 0.8;
+        margin-top: 30px;
     }
 }

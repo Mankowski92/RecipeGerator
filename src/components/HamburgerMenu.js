@@ -31,7 +31,7 @@ class HamburgerMenuPage extends Component {
             light
           >
             <MDBContainer>
-              <MDBNavbarBrand>Brace yourself! Eeating time has come</MDBNavbarBrand>
+              <MDBNavbarBrand>Give up all hope you who enter here!</MDBNavbarBrand>
               <MDBNavbarToggler
                 onClick={this.toggleCollapse('navbarCollapse1')}
               />

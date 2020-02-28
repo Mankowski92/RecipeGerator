@@ -12,8 +12,8 @@ return (
     <>
     <div className="main-about-container">
         <HamburgerMenuPage/>
-        <div className="background">
-            
+        <div className="content">
+            <h1>Marcin Mankowski</h1>
         </div>
    </div>
    </>

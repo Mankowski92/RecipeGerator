@@ -75,7 +75,39 @@
 .infos-container{
 	width: 30%;
 	overflow: auto;
-	height: 68%;
+	height: 77%;
+	margin-top: 195px;
+	.detail-container{
+		.title-img-container{
+			p{
+				background-color: rgba(255, 255, 255, 0.6);
+				border-radius: 15px;
+				padding: 10px;
+				margin-right: 10px;
+				margin-bottom: 0px;
+			}
+			img{
+				padding: 5px;
+			}
+		}
+		.summary-container{
+			background-color: rgba(255, 255, 255, 0.6);
+			border-radius: 15px;
+			margin-right: 10px;
+		}
+	}
+}
+
+
+//h2 inside random recipe container and ol inside random recipe container as well
+h2{ 
+	background-color: rgba(255, 255, 255, 0.6);
+	border-radius: 15px;
+	padding: 5px;
+}
+
+ol{
+	padding-left: 14px;
 }
 
 body {
@@ -107,12 +139,34 @@ img {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #e1e2ed;
 }
+
+.button-1{
+	position: absolute;
+	z-index: 11;
+	top: 286px;
+}
+
+.button-2{
+	position: absolute;
+	z-index: 12;
+	bottom: 189px;
+}
+
+.button-3{
+	position: absolute;
+	z-index: 13;
+	bottom: 97px;
+}
+
+.button-4{
+	position: absolute;
+	z-index: 14;
+	top: 17px;
+}
+
 .button-fridge:hover {
 	background:linear-gradient(to bottom, #9c9c9c 5%, #ededed 100%);
 	background-color:#9c9c9c;
-}
-.button-fridge:active {
-	top:1px;
 }
 
 .fridge{
@@ -143,6 +197,7 @@ img {
 		justify-content: space-around;
 		align-items: center;
 		flex-direction: column;
+		position: relative;
 		.button-fridge:focus{
 			outline: none;
 			}
@@ -188,7 +243,7 @@ img {
 		width: 300px;
 		border-radius: 30px;
 		border: 14px solid #062341;
-		background: #b1b1b1;
+		background-image: linear-gradient(to right top, #e8eaff, #cbcee5, #aeb3cc, #9299b3, #767f9b);
 		transform-origin: 100% 50%;
 		
 		transition: 2.5s;

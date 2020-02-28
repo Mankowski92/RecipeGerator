@@ -79,10 +79,10 @@ function MainView() {
 		        <div className="fridge">
 			        <div className="back-wall">
                 <div className ="back-wall-button-container">
-                  <button className="button-fridge" onClick= {handleShowRandomRecipe} >Random recipe</button>
-                  <button className="button-fridge button-modifier" onClick= {handleShowSearchedRecipe} >Match recipe</button>
-                  <button className="button-fridge button-modifier" onClick= {handleAddToFridge} >Add to fridge</button>
-                  <button className="button-fridge button-modifier" onClick= {handleJoke} >Joke</button>
+                  <button className="button-fridge button-1" onClick= {handleShowRandomRecipe} >Random recipe</button>
+                  <button className="button-fridge button-2 button-modifier" onClick= {handleShowSearchedRecipe} >Match recipe</button>
+                  <button className="button-fridge button-3 button-modifier" onClick= {handleAddToFridge} >Add to fridge</button>
+                  <button className="button-fridge button-4 button-modifier" onClick= {handleJoke} >Joke</button>
                 </div>
               </div>
 		  	      <div className="shelf one"></div>
