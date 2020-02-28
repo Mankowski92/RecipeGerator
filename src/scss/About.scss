@@ -1,0 +1,43 @@
+.main-about-container{
+    display: flex;
+	flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+        .container{
+            background-color: #ccc;
+            opacity: 0.87;
+            position: absolute;
+            z-index: 100;
+            top: 0px;
+            border-radius: 20px;
+            margin-top: 5px;
+            .navbar-brand{
+                font-size: 32px;
+                padding: 8px;
+            }
+            .navbar-toggler{
+                opacity: 1;
+                color:black;
+                border: 2px solid #727272;
+                border-radius: 10px;
+                .navbar-toggler-icon{
+                    opacity: 1;
+                    width: 2em;
+                    height: 2em;
+                }
+            }
+            .navbar{
+                padding: 0;
+            }
+        }
+    
+    .navbar-nav {
+        .nav-item{
+            font-size: 22px;
+            .Ripple-parent{
+                color: #303030 !important;
+            }
+        }
+    }
+}

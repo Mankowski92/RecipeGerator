@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import "../scss/Joke.scss";
 
 const ViewJoke = () => {
     const [data, setData] = useState(false);
@@ -31,7 +32,7 @@ const ViewJoke = () => {
         return <h1>Ładuję...</h1>
     }
     return (
-        <div>
+        <div className="joke-div">
             {data.text}
         </div>
       );

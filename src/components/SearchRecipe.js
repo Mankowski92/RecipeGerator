@@ -1,5 +1,9 @@
 import React, {useState} from "react";
 import "../scss/SearchRecipe.scss"
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Col from 'react-bootstrap/Col';
+
 
 const SearchRecipe = (props) => {
     const [data] = useState(null);
@@ -42,25 +46,16 @@ const SearchRecipe = (props) => {
         }
     
     return (
-        <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={query}
-        onChange={e => setQuery(e.target.value)}
-        placeholder="Put meal type"/>
-        <input
-        type="text"
-        value={excludeIngredients}
-        onChange={e => setexcIudeIngredients(e.target.value)}
-        placeholder="Ingredients you want to exclude"/>
-        <input
-        type="number"
-        value={number}
-        onChange={e => setNumber(e.target.value)}
-        placeholder="Put number of recipes you want to receive"/>
-        <select
-        value={cuisine}
-        onChange={e => setCuisine(e.target.value)}>
+
+<Form>
+  <Form.Row>
+    <Form.Group as={Col} controlId="formGridText">
+      <Form.Label>Dish type</Form.Label>
+      <Form.Control value={query} onChange={e => setQuery(e.target.value)} type="text" placeholder="e.g Hamburger" />
+    </Form.Group>
+    <Form.Group as={Col} controlId="formGridState">
+      <Form.Label>Cousine type</Form.Label>
+      <Form.Control value={cuisine} onChange={e => setCuisine(e.target.value)} as="select">
         <option value="">All</option>
         <option value="african">African</option>
         <option value="american">American</option>
@@ -88,10 +83,17 @@ const SearchRecipe = (props) => {
         <option value="spanish">Spanish</option>
         <option value="thai">Thai</option>
         <option value="vietnamese">Vietnamese</option>
-      </select>
-      <select
-        value={diet}
-        onChange={e => setDiet(e.target.value)}>
+      </Form.Control>
+    </Form.Group>
+  </Form.Row>
+  <Form.Row>
+    <Form.Group as={Col} controlId="formGridText">
+      <Form.Label>Excluded ingredients</Form.Label>
+      <Form.Control value={excludeIngredients} onChange={e => setexcIudeIngredients(e.target.value)} type="text" placeholder="e.g Pasta" />
+    </Form.Group>
+    <Form.Group as={Col} controlId="formGridState">
+      <Form.Label>Diet type</Form.Label>
+      <Form.Control value={diet} onChange={e => setDiet(e.target.value)} as="select">
         <option value="">All</option>
         <option value="gluten free">Gluten Free</option>
         <option value="vegetarian">Vegetarian</option>
@@ -102,10 +104,17 @@ const SearchRecipe = (props) => {
         <option value="paleo">Paleo</option>
         <option value="primal">Primal</option>
         <option value="whole30">Whole30</option>
-      </select>
-        <select
-        value={intolerances}
-        onChange={e => setIntolerances(e.target.value)}>
+      </Form.Control>
+    </Form.Group>
+  </Form.Row>
+  <Form.Row>
+    <Form.Group as={Col} controlId="formGridText">
+      <Form.Label>How many recipes for you?</Form.Label>
+      <Form.Control value={number} onChange={e => setNumber(e.target.value)} type="text" placeholder="e.g 3- (up to 100)" />
+    </Form.Group>
+    <Form.Group as={Col} controlId="formGridState">
+      <Form.Label>Intolerances</Form.Label>
+      <Form.Control value={intolerances} onChange={e => setIntolerances(e.target.value)} as="select">
         <option value="">None</option>
         <option value="dairy">Dairy</option>
         <option value="egg">Egg</option>
@@ -117,11 +126,16 @@ const SearchRecipe = (props) => {
         <option value="shellfish">Shellfish</option>
         <option value="soy">Soy</option>
         <option value="sulfite">Sulfite</option>
-        <option value="tree nut">Tree Nut</option>
+        <option value="tree nut">Tree aNut</option>
         <option value="wheat">Wheat</option>
-        </select> 
-      <button onClick={handleSubmit}>Search for recipes</button>
-    </form>
+      </Form.Control>
+    </Form.Group>
+  </Form.Row>
+  <Button onClick={handleSubmit}>
+    Submit
+  </Button>
+</Form>
+
       );
     }
 

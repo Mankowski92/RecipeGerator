@@ -5,8 +5,14 @@ import ViewJoke from '../ViewJoke';
 import RandomRecipe from "../RandomRecipe";
 import SearchRecipe from "../SearchRecipe"
 import ReceivedRecipes from '../ReceivedRecipes';
-import RecipeDetails from "../RecipeDetails"
-function App() {
+import RecipeDetails from "../RecipeDetails";
+import HamburgerMenuPage from "../HamburgerMenu";
+import About from "../About"
+import Contact from "../Contact"
+
+import {HashRouter as Router,Switch,Route} from "react-router-dom";
+
+function MainView() {
 
   const [isOpen,toggleOpen] = useState(false);
   const [showRandomRecipe, setShowRandomRecipe] = useState(false)
@@ -57,14 +63,15 @@ function App() {
 
 
   return (
-    <>      
+    <>
       <div className= "main-container">
-        <div className= "main-container-bar">Brace yourself! Eeating time has come</div>
+      <HamburgerMenuPage/>
+        
         <div className="main-row-container">
           <div className= "RandomRecipe-container">
             {showRandomRecipe && <RandomRecipe/>}
             {ShowSearchedRecipe &&<SearchRecipe onFound={setReceivedRecipes}/>}
-            {(receivedRecipes !== null) &&<ReceivedRecipes recipes={receivedRecipes} onDetailsClick={setRecipeInfo}/>}
+            {((receivedRecipes !== null) && ShowSearchedRecipe) &&<ReceivedRecipes recipes={receivedRecipes} onDetailsClick={setRecipeInfo}/>}
             {addToFridge && <AddToFridge/>}
             {joke && <ViewJoke/>}
           </div>
@@ -92,5 +99,18 @@ function App() {
         </>
    );
   }
+
+const App = ()=>{
+  return (
+    <Router>
+
+      <Switch>
+        <Route exact path="/" component={MainView}/>
+        <Route  path="/about" component={About}/>
+        <Route  path="/contact" component={Contact}/>
+      </Switch>
+    </Router>
+  )
+}
 
 export default App;

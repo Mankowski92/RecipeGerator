@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import "../scss/RandomRecipe.scss"
 
 const RandomRecipe = () => {
     const [data, setData] = useState(false);
@@ -31,10 +32,10 @@ const RandomRecipe = () => {
     }
     return (
         <div>
-            <h3>{data.recipes[0].title}</h3>
+            <h2>{data.recipes[0].title}</h2>
           <img src={data.recipes[0].image} alt="Tekst alternatywny"></img>
           <div>
-              <h4>Preparation instruction</h4>
+              <h3>Preparation instruction</h3>
               <span dangerouslySetInnerHTML={{__html: data.recipes[0].instructions}} />
           </div>
         </div>
