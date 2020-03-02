@@ -6,15 +6,16 @@ const AddToFridge = ()=>{
   const [value,setValue]  = useState('');
   const [ingredients, setIngredient] = useState([]);
 
-  const array = []
-  ingredients.forEach(function(element) { ///// W tym miejscu przenoszę wpisane rzeczy z li do nowej tablicy
-  array.push(element)
-   
+  // const array = []
+  // ingredients.forEach(function(element) { ///// W tym miejscu przenoszę wpisane rzeczy z li do nowej tablicy
+  // array.push(element)
+  // }
 
   const handleAddClick = (e) =>{
     e.preventDefault()
     setIngredient(prevState => [...prevState, value])
   }
+  
 
   return (
     <form onSubmit={handleAddClick}>
