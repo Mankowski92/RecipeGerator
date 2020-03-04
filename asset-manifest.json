@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/RecipeGerator/static/css/main.3ba8e89a.chunk.css",
+    "main.js": "/RecipeGerator/static/js/main.11c6b541.chunk.js",
+    "main.js.map": "/RecipeGerator/static/js/main.11c6b541.chunk.js.map",
+    "runtime-main.js": "/RecipeGerator/static/js/runtime-main.4623238f.js",
+    "runtime-main.js.map": "/RecipeGerator/static/js/runtime-main.4623238f.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/RecipeGerator/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.11c8c916.chunk.js": "/RecipeGerator/static/js/2.11c8c916.chunk.js",
+    "static/js/2.11c8c916.chunk.js.map": "/RecipeGerator/static/js/2.11c8c916.chunk.js.map",
+    "index.html": "/RecipeGerator/index.html",
+    "precache-manifest.7205fa0cebcba601dd87b3b8b791572d.js": "/RecipeGerator/precache-manifest.7205fa0cebcba601dd87b3b8b791572d.js",
+    "service-worker.js": "/RecipeGerator/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/RecipeGerator/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.3ba8e89a.chunk.css.map": "/RecipeGerator/static/css/main.3ba8e89a.chunk.css.map",
+    "static/js/2.11c8c916.chunk.js.LICENSE.txt": "/RecipeGerator/static/js/2.11c8c916.chunk.js.LICENSE.txt",
+    "static/media/Contact.scss": "/RecipeGerator/static/media/howDareYou.e398cba0.jpg",
+    "static/media/App.scss": "/RecipeGerator/static/media/main-background-alt.5d222790.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4623238f.js",
+    "static/css/2.47e06e2e.chunk.css",
+    "static/js/2.11c8c916.chunk.js",
+    "static/css/main.3ba8e89a.chunk.css",
+    "static/js/main.11c6b541.chunk.js"
+  ]
+}
