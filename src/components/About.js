@@ -1,21 +1,18 @@
 import React from "react";
-import "../scss/About.scss"
+import "../scss/About.scss";
 import HamburgerMenuPage from "./HamburgerMenu";
 
-
 const About = () => {
-
-return (
+  return (
     <>
-    <div className="main-about-container">
-        <HamburgerMenuPage/>
+      <div className="main-about-container">
+        <HamburgerMenuPage />
         <div className="content">
-            <h1>Marcin Mankowski</h1>
+          <h1>Marcin Mankowski</h1>
         </div>
-   </div>
-   </>
-)
+      </div>
+    </>
+  );
+};
 
-}
-
-export default About
+export default About;
