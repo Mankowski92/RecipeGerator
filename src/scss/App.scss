@@ -1,250 +1,256 @@
-@import 'normalize';
-@import 'mixins';
+@import "normalize";
+@import "mixins";
 
 * {
-	box-sizing: border-box;
-	font-family: 'Kanit', ;
+  box-sizing: border-box;
+  font-family: "Kanit";
 }
 
-:root{
-	--rotation-angle: 180deg;
+:root {
+  --rotation-angle: 180deg;
 }
 
-.joke-div{
-	font-size: 38px;
-	background-color: rgba(255, 255, 255, 0.6);
-	border-radius: 20px;
+.joke-div {
+  font-size: 38px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
 }
 
-.main-container{
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	height: 100vh;
-	justify-content: space-around;
-	background-image: url(../images/main-background-alt.jpeg);
-	background-size: cover;
-	position: relative;
-	
-	.main-row-container{
-	display: flex;
-	flex-direction: row;
-	height: 100vh;
-	position: absolute;
-	align-items: center;
-	justify-content: space-around;
-	width: 100%;
-	position: absolute;
-	}
+.main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  background-image: url(../images/main-background-alt.jpeg);
+  background-size: cover;
+  position: relative;
+
+  .main-row-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+  }
 }
 
-.RandomRecipe-container{
-	width: 30%;
-	position: relative;
-	top: 10px;
-	overflow-x: hidden;
-	height: 77%;
-	margin-top: 180px;
-	form{
-		padding: 2px;
-		.form-row{
-			.form-group{
-				margin-bottom: 0;
-			}
-		}
-		.btn-primary{
-			color: white;
-			background-color: #bbb;
-			border: 3px solid #ccc;
-			border-radius: 15px;
-			font-size: 18px;
-			margin: 0 60px;
-		}
-	}
-	label{
-		padding-left: 8px;
-		font-size: 1.2rem;
-	}
+.RandomRecipe-container {
+  width: 30%;
+  position: relative;
+  top: 10px;
+  overflow-x: hidden;
+  height: 77%;
+  margin-top: 180px;
+  form {
+    padding: 2px;
+    .form-row {
+      .form-group {
+        margin-bottom: 0;
+      }
+    }
+    .btn-primary {
+      color: white;
+      background-color: #bbb;
+      border: 3px solid #ccc;
+      border-radius: 15px;
+      font-size: 18px;
+      margin: 0 60px;
+    }
+  }
+  label {
+    padding-left: 8px;
+    font-size: 1.2rem;
+  }
 }
 
-.fridge-container{
-	width: 30%;
-	margin-top: 170px
+.fridge-container {
+  width: 30%;
+  margin-top: 170px;
 }
 
-.infos-container{
-	width: 30%;
-	overflow: auto;
-	height: 77%;
-	margin-top: 195px;
-	.detail-container{
-		.title-img-container{
-			p{
-				background-color: rgba(255, 255, 255, 0.6);
-				border-radius: 15px;
-				padding: 10px;
-				margin-right: 10px;
-				margin-bottom: 0px;
-			}
-			img{
-				padding: 5px;
-			}
-		}
-		.summary-container{
-			background-color: rgba(255, 255, 255, 0.6);
-			border-radius: 15px;
-			margin-right: 10px;
-		}
-	}
+.infos-container {
+  width: 30%;
+  overflow: auto;
+  height: 77%;
+  margin-top: 195px;
+  .detail-container {
+    .title-img-container {
+      p {
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 15px;
+        padding: 10px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+      }
+      img {
+        padding: 5px;
+      }
+    }
+    .summary-container {
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 15px;
+      margin-right: 10px;
+    }
+  }
 }
-
 
 //h2 inside random recipe container and ol inside random recipe container as well
-h2{ 
-	background-color: rgba(255, 255, 255, 0.6);
-	border-radius: 15px;
-	padding: 5px;
+h2 {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  padding: 5px;
 }
 
-ol{
-	padding-left: 14px;
+ol {
+  padding-left: 14px;
 }
 
 body {
-	height: 100vh;
-	font-family: 'Kanit', ;
-	color: black;
+  height: 100vh;
+  font-family: "Kanit";
+  color: black;
 }
 
 img {
-	display: flex;	
-	max-width: 100%;
-	max-height: 100%;
-	border-radius: 15%;
-	padding-bottom: 10px;
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15%;
+  padding-bottom: 10px;
 }
 
-.button-fridge{
-	box-shadow: 3px 4px 0px 0px #899599;
-	background:linear-gradient(to bottom, #ededed 5%, #9c9c9c 100%);
-	background-color:#ededed;
-	border-radius:15px;
-	border:1px solid #cfcfcf;
-	display:inline-block;
-	cursor:pointer;
-	color:#555b5c;
-	font-family:Arial;
-	font-size:17px;
-	padding:7px 25px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #e1e2ed;
+.button-fridge {
+  box-shadow: 3px 4px 0px 0px #899599;
+  background: linear-gradient(to bottom, #ededed 5%, #9c9c9c 100%);
+  background-color: #ededed;
+  border-radius: 15px;
+  border: 1px solid #cfcfcf;
+  display: inline-block;
+  cursor: pointer;
+  color: #555b5c;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 7px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #e1e2ed;
 }
 
-.button-1{
-	position: absolute;
-	z-index: 11;
-	top: 286px;
+.button-1 {
+  position: absolute;
+  z-index: 11;
+  top: 286px;
 }
 
-.button-2{
-	position: absolute;
-	z-index: 12;
-	bottom: 189px;
+.button-2 {
+  position: absolute;
+  z-index: 12;
+  bottom: 189px;
 }
 
-.button-3{
-	position: absolute;
-	z-index: 13;
-	bottom: 97px;
+.button-3 {
+  position: absolute;
+  z-index: 13;
+  bottom: 97px;
 }
 
-.button-4{
-	position: absolute;
-	z-index: 14;
-	top: 17px;
+.button-4 {
+  position: absolute;
+  z-index: 14;
+  top: 17px;
 }
 
 .button-fridge:hover {
-	background:linear-gradient(to bottom, #9c9c9c 5%, #ededed 100%);
-	background-color:#9c9c9c;
+  background: linear-gradient(to bottom, #9c9c9c 5%, #ededed 100%);
+  background-color: #9c9c9c;
 }
 
-.fridge{
-	position: relative;
-	height: 450px;
-	width: 300px;
-	border-radius: 30px;
-	border: 14px solid #062341;
-	background: #e3e3e3;
-	box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
-	.back-wall{
-		@include absolute-centered;
-		position: absolute;
-		width: 240px;
-		height: 375px;
-		background: #ececec;
-		border: 17px solid #d4d4d4;
-		border-radius: 15px;
-		margin: 0 auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-	.back-wall-button-container{
-		width: 100%;
-		height: 100%;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		flex-direction: column;
-		position: relative;
-		.button-fridge:focus{
-			outline: none;
-			}
-		}
-	}	
-	.shelf{
-		position: absolute;
-		@include absolute-centered;
-		width: 240px;
-		height: 5px;
-		background: #8a8a8a;
-		&:before{
-			content: '';
-			position: absolute;
-			top: -6px;
-			left: 0;
-			width: 240px;
-			border-bottom: 6px solid #b4b4b4;
-			border-left: 6px solid transparent;
-			border-right: 6px solid transparent;
-		}
-	}
-	.one {
-		top: 30%;
-	}
-	.two {
-		top: 53%;
-	}
-	.three{
-		top: 75%;
+.fridge {
+  position: relative;
+  height: 450px;
+  width: 300px;
+  border-radius: 30px;
+  border: 14px solid #062341;
+  background: #e3e3e3;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+  .back-wall {
+    @include absolute-centered;
+    position: absolute;
+    width: 240px;
+    height: 375px;
+    background: #ececec;
+    border: 17px solid #d4d4d4;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .back-wall-button-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      .button-fridge:focus {
+        outline: none;
+      }
+    }
   }
-  
-  .door-open{
-    transform: rotateY(var(--rotation-angle) );
-	transition: 2.5s;
+  .shelf {
+    position: absolute;
+    @include absolute-centered;
+    width: 240px;
+    height: 5px;
+    background: #8a8a8a;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 0;
+      width: 240px;
+      border-bottom: 6px solid #b4b4b4;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+    }
+  }
+  .one {
+    top: 30%;
+  }
+  .two {
+    top: 53%;
+  }
+  .three {
+    top: 75%;
   }
 
-	.door{
-		position: absolute;
-		top: -14px;
-		left: -14px;
-		height: 450px;
-		width: 300px;
-		border-radius: 30px;
-		border: 14px solid #062341;
-		background-image: linear-gradient(to right top, #e8eaff, #cbcee5, #aeb3cc, #9299b3, #767f9b);
-		transform-origin: 100% 50%;
-		transition: 2.5s;
-	}
+  .door-open {
+    transform: rotateY(var(--rotation-angle));
+    transition: 2.5s;
+  }
+
+  .door {
+    position: absolute;
+    top: -14px;
+    left: -14px;
+    height: 450px;
+    width: 300px;
+    border-radius: 30px;
+    border: 14px solid #062341;
+    background-image: linear-gradient(
+      to right top,
+      #e8eaff,
+      #cbcee5,
+      #aeb3cc,
+      #9299b3,
+      #767f9b
+    );
+    transform-origin: 100% 50%;
+    transition: 2.5s;
+  }
 }

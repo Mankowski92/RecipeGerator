@@ -1,43 +1,43 @@
-.main-container{
-    .container{
-        background-color: #ccc;
-		opacity: 0.87;
-        position: absolute;
-        z-index: 100;
-        top: 0px;
-        border-radius: 20px;
-        margin-top: 5px;
-        .navbar-brand{
-            font-size: 32px;
-            padding: 8px;
-        }
-        .navbar-toggler{
-            opacity: 1;
-            color:black;
-            border: 2px solid #727272;
-            border-radius: 10px;
-            .navbar-toggler-icon{
-                opacity: 1;
-                width: 2em;
-                height: 2em;
-            }
-        }
-        .navbar{
-            padding: 0;
-        }
+.main-container {
+  .container {
+    background-color: #ccc;
+    opacity: 0.87;
+    position: absolute;
+    z-index: 100;
+    top: 0px;
+    border-radius: 20px;
+    margin-top: 5px;
+    .navbar-brand {
+      font-size: 32px;
+      padding: 8px;
     }
+    .navbar-toggler {
+      opacity: 1;
+      color: black;
+      border: 2px solid #727272;
+      border-radius: 10px;
+      .navbar-toggler-icon {
+        opacity: 1;
+        width: 2em;
+        height: 2em;
+      }
+    }
+    .navbar {
+      padding: 0;
+    }
+  }
 }
 
 .navbar-nav {
-    .nav-item{
-        font-size: 18px;
-        padding-left: 0px;
-        .Ripple-parent{
-            color: #303030 !important;
-        }
+  .nav-item {
+    font-size: 18px;
+    padding-left: 0px;
+    .Ripple-parent {
+      color: #303030 !important;
     }
+  }
 }
 
-.navbar-toggler:focus{
-    outline: none;
-    }
+.navbar-toggler:focus {
+  outline: none;
+}
