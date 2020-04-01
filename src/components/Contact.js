@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="main-contact-container">
         <HamburgerMenuPage />
         <div className="content">
-          <h1>How dare you try to contact me!</h1>
+          <h1>Section contact in progress</h1>
           <div className="greta"></div>
         </div>
       </div>

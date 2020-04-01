@@ -8,7 +8,8 @@ const About = () => {
       <div className="main-about-container">
         <HamburgerMenuPage />
         <div className="content">
-          <h1>Marcin Mankowski</h1>
+          <h1>Section contact in progress</h1>
+          <div className="work-progress"></div>
         </div>
       </div>
     </>
