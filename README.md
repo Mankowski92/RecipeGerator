@@ -1,3 +1,6 @@
+App is deployed here:
+https://mankowski92.github.io/RecipeGerator/#/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
