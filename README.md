@@ -1,5 +1,3 @@
-It is a repository with a working part of the main functionality. It don't have RWD at the moment, but it will be added in the near future. The project is based on components and a REACT library.
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
